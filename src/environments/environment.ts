@@ -1,4 +1,4 @@
-import * as firebase from "./environments.prod.json"
+import * as firebase from "./environment.prod.json"
 
 export const environment = {
   production:true,
