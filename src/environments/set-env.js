@@ -1,10 +1,8 @@
 function setEnv() {
-  fs = require("fs");
-  writeFile = fs.writeFile;
-
-  targetPath = "./src/environments/environment.prod.json";
-
-  envConfigFile = process.env.FIREBASE;
+  const fs = require("fs");
+  const writeFile = fs.writeFile;
+  const targetPath = "./src/environments/environment.prod.json";
+  const envConfigFile = process.env.FIREBASE;
 
   console.log(
     `The file environment.prod.json will be written with the following content: ${envConfigFile} \n`
@@ -22,7 +20,6 @@ function setEnv() {
       );
     }
   });
-
 }
 
 setEnv();
