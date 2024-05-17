@@ -7,7 +7,7 @@ function setEnv() {
   envConfigFile = process.env.FIREBASE;
 
   console.log(
-    `The file `environment.prod.json` will be written with the following content: ${envConfigFile} \n`
+    `The file environment.prod.json will be written with the following content: ${envConfigFile} \n`
   );
 
   writeFile(targetPath, envConfigFile, function (err) {
